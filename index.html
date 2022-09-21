@@ -1,24 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Squarcialupi's Northcoders Portfolio Site</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li>bla</li>
-                <li>bla</li>
-                <li>bla</li>
-                <li>bla</li>
-            </ul>
-        </nav>
-    </header>
+    <div id="wrapper">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Get In Touch</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="contentwrapper">
+                <h1>Squarcialupi's Portfolio Website</h1>
+                <p>Welcome to my portfolio site! I'm please to see you!</p>
+                <p>Here is a flexy list of all the stuff I've made.</p>
+            </div>
+            <div class="flex-container homepage-flex-list">
+                <div class="flex-item">
+                    <h2>Maze Solver</h2>
+                    <p>A JavaScript maze solver that will find a solution to a maze with thousands of nodes.</p>
+                </div>
+                <div class="flex-item">
+                    <h2>Huffman Encoder</h2>
+                    <p>This script can take any text and will encode it in a Huffman tree, then converts it back into regular text.
+                        It usually saves about 60% of disk space.</p>
+                </div>
+                <div class="flex-item">
+                    <h2>Sieve of Erathosthenes</h2>
+                    <p>This'll work out and print all prime numbers under 30mil in under one second.</p>
+                </div>
+            </div>
+            <div class="contentwrapper">
+                <p>As you can see, I've been very busy!</p>
+            </div>
+        </main>
+        <footer>
+            <div>Copyright &copy; 2022 Squarcialupi.</div>
+            <div><a href="index.html">Home</a> | <a href="contact.html">Get In Touch</a></div>
+        </footer>
+    </div>
 </body>
 
 </html>

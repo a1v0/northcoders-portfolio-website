@@ -1,0 +1,98 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    padding-bottom: 3rem;
+}
+
+#wrapper {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+header nav ul,
+footer {
+    background-color: #1f1f77;
+    padding: 15px 5px;
+    margin: 0;
+    color: #ffffff;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+header nav ul li a,
+footer a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+div.contentwrapper {
+    padding: 0 15px;
+}
+
+div.flex-container {
+    width: 100%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+    align-items: center;
+}
+
+div.flex-item {
+    max-width: 15rem;
+    text-align: center;
+    padding: 0.5rem 1rem;
+}
+
+div.homepage-flex-list {
+    background-color: #aaaaaa;
+}
+
+footer {
+    align-content: flex-end;
+    padding: 15px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 60rem) {
+    div.flex-container {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-wrap: wrap;
+    }
+
+    main {
+        padding-bottom: 4rem;
+    }
+}
+
+@media screen and (max-width: 40rem) {
+    p {
+        /* How do I ensure that all the header tags also increase in size? */
+        font-size: 1.2rem;
+    }
+
+    main {
+        padding-bottom: 5rem;
+    }
+}
